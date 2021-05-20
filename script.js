@@ -13,7 +13,7 @@ let playlist_List = [
             {
                 name : "Perfect",
                 path : "https://firebasestorage.googleapis.com/v0/b/music-player-2f363.appspot.com/o/songs%2Fperfect.mp3?alt=media&token=328c0bec-65d7-40b2-affa-0a9cdee0c32f",
-                image : "images/sugar.jpeg"
+                image : "images/perfect.jpeg"
             },
             {   
             
