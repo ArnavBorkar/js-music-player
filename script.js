@@ -284,7 +284,7 @@ function addPlaylistOption(){
 
 function createNewPlaylist(){
     
-    playlist_List[totalPlaylists].name = prompt("Enter Name of new Playlist");
+    playlist_List[totalPlaylists].name = prompt("Enter Name for your New Playlist").split(" ").join("-");
     var newNode = document.createElement('div');
     newNode.setAttribute("class", "customlist");
 
