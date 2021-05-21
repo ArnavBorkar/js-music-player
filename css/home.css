@@ -1,0 +1,179 @@
+body{
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    border: 0px;
+  
+}
+
+.body-div{
+    background: 
+    linear-gradient(296.8deg, rgba(90, 87, 255, 0.58) -22.17%, rgba(0, 0, 0, 0) 100%),  
+    linear-gradient(113.39deg, rgba(249, 121, 205, 0.7) -16.88%, rgba(0, 0, 0, 0) 100%),  
+   linear-gradient(116.34deg, #000000 0%, rgba(179, 179, 179, 0) 100%), #000000; 
+   width: 95%;
+   height: 100%;
+   padding: 5vh;
+    
+}
+
+.body-div2{
+    background-color: rgba(255, 255, 255, 0.100);
+    padding: 4vh;
+    border-radius: 3rem;
+
+}
+
+.listConatainer{
+    display: table-row;
+}
+
+
+
+.nowplaying_container{
+    background-color: rgba(255, 255, 255, 0.050);
+    border-radius: 3rem;
+    padding: 2rem;
+    text-align: center;
+    margin-right: 5%;
+    margin-bottom: 2%;
+
+}
+
+
+.songlist{
+    background-color: rgba(255, 255, 255, 0.050);
+    border-radius: 3rem;
+    padding: 2rem;
+    margin-right: 5%;
+    margin-bottom: 2%;
+
+
+
+}
+.customlist{
+    background-color: rgb(185, 241, 234);
+    display : table-cell;
+    padding: 1rem;
+}
+
+.likedList{
+    background-color: rgba(235, 122, 122, 0.150);
+    border-radius: 3rem;
+    padding: 2rem;
+    margin-bottom: 2%;
+
+
+}
+
+.song-btns button{
+   text-align: center;
+   justify-content: center;
+   background-color: tomato;
+   border-radius: 100%;
+}
+
+.song-btns button:hover{
+    opacity: 70%;
+}
+
+.song-btns form input{
+    text-align: center;
+    justify-content: center;
+    background-color: tomato;
+
+}
+
+button{
+    height: 5em;
+    width: 5em;
+    justify-content: center;
+}
+
+.songname{
+    font-size: 50px;
+}
+
+.playlist_control_btns{
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 3rem;
+    display : table-cell;
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.playlist-btn{
+    size: 20rem;
+    background-color: cyan;
+    border-radius: 1rem;
+}
+
+
+
+
+/* Making the first row responsive UwU ................START...... */
+
+
+/* Tables
+================================== */
+.Rtable {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 3em 0;
+    padding: 0;
+  }
+  .Rtable-cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    overflow: hidden;
+    list-style: none;
+  }
+  
+  /* Table column sizing
+  ================================== */
+  .Rtable--2cols > .Rtable-cell {
+    width: 50%;
+  }
+  .Rtable--3cols > .Rtable-cell {
+    width: 30.00%;
+  }
+  .Rtable--4cols > .Rtable-cell {
+    width: 25%;
+  }
+  .Rtable--5cols > .Rtable-cell {
+    width: 20%;
+  }
+  .Rtable--6cols > .Rtable-cell {
+    width: 16.6%;
+  }
+
+  /*==================================== */
+  @media all and (max-width: 800px) {
+    .Rtable--collapse {
+      display: block;
+    }
+    .Rtable--collapse > .Rtable-cell {
+      width: 100% !important;
+    }
+    .Rtable--collapse > .Rtable-cell--foot {
+      margin-bottom: 1em;
+    }
+  }
+  .no-flexbox .Rtable {
+    display: block;
+  }
+  .no-flexbox .Rtable > .Rtable-cell {
+    width: 100%;
+  }
+  .no-flexbox .Rtable > .Rtable-cell--foot {
+    margin-bottom: 1em;
+  }
+  
+
+
+
+/* Making the first row responsive UwU ................END...... */
