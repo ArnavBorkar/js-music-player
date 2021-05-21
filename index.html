@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Music Player</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body><div class="body-div"><div class="body-div2">
+
+<div class="Rtable Rtable--3cols Rtable--collapse">
+<div class="nowplaying_container Rtable-cell">
+NOW PLAYING
+<div class="songname">
+Select A playlist    
+</div>
+
+<div class="song-img">
+    <img id = "songImg" src="images/start.jpeg" alt="DNE" height="200em" width="200em" style="border-radius: 2rem;">
+</div>
+
+<div class="song-bar">
+    Song Progress bar is under construction ;p
+</div>
+
+<div class="song-btns">
+<button class="prev_btn" onclick="prevTrack()"><i class="fas fa-backward"></i></button> 
+<button class="playpause_btn" onclick="playPauseTrack()"><i class="fas fa-play"></i></button> 
+<button class="next_btn" onclick="nextTrack()"><i class="fas fa-forward"></i></button> 
+<button class="like_song" onclick="addToLikedSongs()"><i class="fas fa-heart"></i></button> 
+
+<form>
+    Select a playlist to add this song:
+    <select id="playlist_form">
+      <option> 🎶All your Playlists </option>
+
+    </select>
+    <br>
+    <input type="button" class="add_to_playlist" onclick="addToPlaylist()" value="Add to Playlist">
+    </form>
+
+</div></div>
+
+<div class="songlist Rtable-cell" id="all-songs">
+    <h2><button class="playlist-btn" onclick="selectPlaylist()"><i class="fas fa-play"></i></button>ALL SONGS</h2>
+    <ol id="songList"></ol>
+    </div>
+
+
+
+<div class="likedList Rtable-cell">
+    <h2><button class="playlist-btn" onclick="playLikedSongs()"><i class="fas fa-play"></i></button> Liked Songs</h2>
+    <ol id="likedList"></ol>
+    </div>
+    
+</div>
+
+<div class="listContainer" id="list_Container">
+<!-- --------------------------------------------------------- -->
+
+
+
+
+<div class="playlist_control_btns">
+    <h2>Playlist Maker</h2>
+    <h3>Create a new Playlist<button onclick="createNewPlaylist()"><i class="fas fa-plus"></i></button></h3>
+    You can create upto 6 custom playlists.<br>
+    For more playlists contact developer.
+</div>
+
+
+
+
+
+<!-- --------------------------------------------------------- -->
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script src="script.js"></script>
+</div></div></body>
+</html>
